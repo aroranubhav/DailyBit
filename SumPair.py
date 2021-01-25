@@ -15,7 +15,7 @@
 class Solution:
     def sumpair(self, nums: list[int], target: int) -> list[int]:
         start, end = 0, len(nums) - 1
-
+    
         while start < end:
             curr_sum = nums[start] + nums[end]
             if curr_sum == target:
