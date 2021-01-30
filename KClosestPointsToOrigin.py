@@ -32,7 +32,7 @@ class Solution:
                 heapq.heappush(heap, (self.euclidean_dist(point), point))
             else:
                 heapq.heappushpop(heap, (self.euclidean_dist(point), point))
-        
+
         ans = []
         for point in heap:
             ans.append(point[1])
