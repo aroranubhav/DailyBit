@@ -37,7 +37,8 @@ class Solution:
                 stack.append(char)
             elif char in closing_braces and len(stack) == 0:
                 return False
-            elif char == ')' and stack[-1] == '(' or char == '}' and stack[-1] == '{' or char == ']' and stack[-1] == '[':
+            elif char == ')' and stack[-1] == '(' or char == '}' \
+                    and stack[-1] == '{' or char == ']' and stack[-1] == '[':
                 stack.pop()
             else:
                 return False
